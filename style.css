@@ -89,7 +89,7 @@ textarea::placeholder {
   position: relative;
   margin-top: 1rem;
   margin-left: 1rem;
-  background-image: url("/img/encriptador.png");
+  background-image: url("./img/encriptador.png");
   background-repeat: no-repeat;
   background-position: 18px;
   background-size: 100%;
