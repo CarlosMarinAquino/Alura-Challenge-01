@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 1rem;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(-45deg, #010431, #12203b, #022f91, #0c0574);
+  background-size: 300% 300%;
+  -webkit-animation: gradient 15s ease infinite;
+  animation: gradient 15s ease infinite;
+  height: 100%;
+  color: white;
+}
+
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+header {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: row;
+}
+h1 {
+  margin: 0 auto;
+}
+.logo-alura {
+  max-width: 75px;
+  max-height: 750px;
+}
+main {
+  display: flex;
+  max-width: 1500px;
+  flex-direction: row;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+section {
+  display: flex;
+  flex-direction: column;
+}
+textarea {
+  color: #000549;
+  font-size: large;
+  line-height: 1.3rem;
+  overflow: auto;
+  font-family: "Roboto";
+}
+textarea::placeholder {
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  color: #00084d;
+  font-family: "Roboto", sans-serif;
+}
+
+.input-text {
+  border-radius: 10px;
+  margin-top: 1rem;
+}
+.message {
+  position: relative;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  background-image: url("/img/encriptador.png");
+  background-repeat: no-repeat;
+  background-position: 18px;
+  background-size: 100%;
+  border-radius: 10px;
+}
+.buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+.button-1 {
+  background-color: #0351a5;
+}
+.button-2 {
+  background-color: #a7a5a5;
+}
+
+button {
+  color: #ffffff;
+  padding: 0.7em 1em;
+  font-size: 18px;
+  border-radius: 0.5em;
+  border: 1px solid #b4b4b4;
+  transition: all 0.3s;
+}
+
+button:hover {
+  border: 1px solid white;
+}
+
+button:active {
+  box-shadow: 4px 4px 12px #c5c5c5, -4px -4px 12px #ffffff;
+}
+footer {
+  text-align: center;
+  margin: 5rem 1rem;
+}
+
+@media (min-width: 350px) and (max-width: 1000px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+  }
+  section {
+    display: flex;
+    flex-direction: column;
+  }
+  textarea {
+    max-width: fit-content;
+  }
+}

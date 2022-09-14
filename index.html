@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Alura Text Encrypter</title>
+  </head>
+  <body>
+    <header>
+      <img
+        class="logo-alura"
+        src="img/alura-A-removebg.png"
+        alt="Alura Logo icon"
+      />
+      <h1>Text Encrypter Challenge 01</h1>
+    </header>
+    <main>
+      <section>
+        <div class="left-side">
+          <textarea
+            class="input-text"
+            cols="40"
+            rows="28"
+            placeholder="type your message here (Spanish)"
+          ></textarea>
+          <div class="buttons">
+            <button class="encrypt button-1" onclick="encryptButton()">
+              Encrypt
+            </button>
+            <button class="decrypt button-2" onclick="decryptButton()">
+              Decrypt
+            </button>
+          </div>
+        </div>
+      </section>
+      <section>
+        <textarea class="message" cols="40" rows="28"></textarea>
+        <div class="buttons">
+          <button class="copy button-1" onclick="copy()">Copy</button>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <h5>
+        made by Carlos Marin Aquino with ♥ for Oracle One Next Education 2022
+      </h5>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>
